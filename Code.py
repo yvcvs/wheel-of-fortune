@@ -357,15 +357,11 @@ while round_counter == 3:
                 guess1 = str(input("Guess a consonant: "))
                 break
             elif guess1 not in letters:
-                print(f"{guess1} was not in the puzzle.")
-                print(goal)
                 break
             elif guess1 in letters:
                 for x in range(0,len(word)):
                     if guess1 == word[x] and goal[x] == '_':
                         goal[x] = guess1
-                print(f"{guess1} was in the word!")
-                print(goal)
                 break
 
         guess2 = str(input("Guess a consonant: "))
@@ -383,15 +379,11 @@ while round_counter == 3:
                 guess2 = str(input("Guess a consonant: "))
                 break
             elif guess2 not in letters:
-                print(f"{guess2} was not in the puzzle.")
-                print(goal)
                 break
             elif guess2 in letters:
                 for x in range(0,len(word)):
                     if guess2 == word[x] and goal[x] == '_':
                         goal[x] = guess2
-                print(f"{guess2} was in the word!")
-                print(goal)
                 break
 
         guess3 = str(input("Guess a consonant: "))
@@ -409,15 +401,11 @@ while round_counter == 3:
                 guess3 = str(input("Guess a consonant: "))
                 break
             elif guess3 not in letters:
-                print(f"{guess3} was not in the puzzle.")
-                print(goal)
                 break
             elif guess3 in letters:
                 for x in range(0,len(word)):
                     if guess3 == word[x] and goal[x] == '_':
                         goal[x] = guess3
-                print(f"{guess3} was in the word!")
-                print(goal)
                 break
 
         guess4 = str(input("Guess a vowel: "))
@@ -435,16 +423,14 @@ while round_counter == 3:
                 guess4 = str(input("Guess a vowel: "))
                 break
             elif guess4 not in letters:
-                print(f"{guess4} was not in the puzzle.")
-                print(goal)
                 break
             elif guess4 in letters:
                 for x in range(0,len(word)):
                     if guess4 == word[x] and goal[x] == '_':
                         goal[x] = guess4
-                print(goal)
                 break
 
+        print(goal)
         solve = str(input("Solve the puzzle: "))
         while True:
             if solve == word:
